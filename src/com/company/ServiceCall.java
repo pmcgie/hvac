@@ -7,6 +7,7 @@ import java.util.Date;
 /**
  * Represents a generic service call to a furnace, boiler, AC unit...
  */
+
 public class ServiceCall {
 
     protected String serviceAddress;
@@ -14,7 +15,7 @@ public class ServiceCall {
     protected Date reportedDate;
     protected Date resolvedDate;
 
-    protected final static double UNRESOLVED = -1  ;  //Flag to indicate this hasn't been resolved so we don't have a fee yet
+    protected final static double UNRESOLVED = -1  ;  //Flag to indicate this hasn't been resolved, so we don't have a fee yet
 
     protected String resolution;
     protected double fee;
@@ -58,7 +59,6 @@ public class ServiceCall {
     public void setProblemDescription(String problemDescription) {
         this.problemDescription = problemDescription;
     }
-
 
     public String getResolution() {
         return resolution;
